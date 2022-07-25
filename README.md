@@ -23,6 +23,7 @@ username: FangBinxing\
 key: Great_Firewall\
 ===========\
 [admin]和username后面的随便写，key后面的就是二次识别使用的密钥，冒号后面有空格\
+文件属性随意\
 ## 安装
 
 ## 历代更新
