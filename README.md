@@ -1,5 +1,5 @@
 # autobak
-autobak，自动备份加密文件，保护文件安全
+autobak，自动备份加密文件，保护文件安全。始于2021年11月，是文档备份软件中的“伟大史诗”。
 ## 简介
 DiskDriveAutoBackups，缩写DDAB，简称autobak（以下简称为“本软件”或“本程序”或“此软件”或“此程序”）\
 亮点：全自动备份，隐藏窗口执行，中美国防部文件加密标准AES-256，极长密钥，设备序列号、管理员授权INF文件双重验证，随机文件名\
@@ -9,14 +9,17 @@ DiskDriveAutoBackups，缩写DDAB，简称autobak（以下简称为“本软件�
 ### 规避审查
 由于部分国家或地区网络封闭（例如伊朗，印度，乌克兰），为了规避审查，本软件许可任何人对程序的文件名称、文件版权信息进行任何修改，但是不得进行其他未许可的逆向\
 例如：DriveShadow,DiskCopy,Copy Right GFW LLC.\
+### 用户相关
+#### 披露
+我们尊重用户的隐私和自由，除非相关部门能够证明使用者是恐怖分子或涉嫌恐怖主义或军火贩卖，否则拒绝披露用户信息。
 ## 源码相关
 autobak.exe ： autobak主程序，不包括进程保护，可以单独放到任意目录直接运行\
 autobak.bat ： 主程序源码\
 Rar.exe ： winrar的命令行版本，autobak使用它用于加密和拷贝\
 recopy.exe ： autobak使用它，是将加密后文件随机重命名并且更改存放目录的程序\
 recopy.bat ： recopy.exe的源码
-### 编译与使用
-编译autobak.bat，并且保证由autobak.bat编译出的autobak.exe在运行时会自动释放出Rar.exe和recopy.exe到运行目录下\
+### 自行编译
+编译autobak.bat，并且保证由autobak.bat编译出的autobak.exe在运行时会自动释放出Rar.exe和recopy.exe到运行目录下（除非修改了路径）\
 在源码autobak.bat中，用户需要填入自己的可移动存储设备序列号；设置加密密码，以及用来二次识别管理员的可移动存储设备的key（密钥）\
 管理员在自己的可移动存储设备根目录下创建文件“admin.inf”，格式如下：\
 [admin]\
@@ -27,6 +30,9 @@ key: Great_Firewall\
 文件属性随意
 ## 安装
 部分版本需要按照指定路径安装并写入注册项，多数版本绿色免安装
+## 订购版本使用
+### 权限
+autobak需要权限：写入，执行，创建，删除
 ## 历代更新
 ### 1.x版本
 #### 1.0
